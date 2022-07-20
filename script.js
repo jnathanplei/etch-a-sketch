@@ -11,3 +11,12 @@ function makeRows(rows, cols) {
 };
 
 makeRows(16, 16);
+
+function blackColor() {
+    const boxs = container.querySelectorAll('.grid-item');
+    boxs.forEach(box => box.addEventListener('mouseover', function() {
+        this.style.background = 'black';
+    }))  
+}
+
+blackColor()
